@@ -14,7 +14,6 @@ const routeLoggerMiddleware = require('./app/middlewares/routeLogger.js');
 const globalErrorMiddleware = require('./app/middlewares/appErrorHandler');
 const fileMiddleware = require('./app/middlewares/file');
 
-const middleware = require('./app/middlewares/body-middleware');
 
 var multer = require("multer");
 

@@ -34,9 +34,11 @@ let socialLoginFunction = (req, res) => {
                             firstName: req.body.firstName,
                             lastName: req.body.lastName || '',
                             email: req.body.email.toLowerCase(),
+                            userName: req.body.fullName.toLowerCase(),
                             fullName: req.body.fullName.toLowerCase(),
                             createdOn: time.now()
                         })
+                        console.log(newUser);
                         newUser.save((err, newUser) => {
                             if (err) {
 

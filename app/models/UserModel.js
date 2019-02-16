@@ -13,7 +13,6 @@ let userSchema = new Schema({
     default: '',
   },
   fullName: {
-    index: true,
     type: String,
     default: ''
   },
@@ -25,7 +24,6 @@ let userSchema = new Schema({
     type: String
   },
   userName: {
-    index: true,
     type: String,
     default: ''
   },
@@ -36,6 +34,7 @@ let userSchema = new Schema({
     maxlength: 10
   },
   email: {
+    index: true,
     type: String,
     required: true
   },
